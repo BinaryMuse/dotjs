@@ -1,5 +1,5 @@
 // xkcd title text under the image
-var image     = $("div img[title]");
+var image     = $("div#contentContainer img[title]");
 var paragraph = $("<p>" + image.attr('title') + "</p>");
 image.attr('title', '');
 paragraph.css({"font-variant": "normal",

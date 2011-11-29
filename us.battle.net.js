@@ -1,6 +1,6 @@
 $(function() {
   var signature   = "\n________________________________________________\n" +
-    "MVP of Something or Other\n" +
+    "MVP, Web and API\n" +
     "Libraries for the Community Platform API: http://us.battle.net/wow/en/forum/topic/2369882588";
   var textarea    = $("textarea.post-editor");
   var currentText = textarea.val();

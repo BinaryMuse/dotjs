@@ -8,3 +8,14 @@ paragraph.css({"font-variant": "normal",
                "padding": "1em",
                "background-color": "#ffc"});
 image.parents('#comic').after(paragraph);
+
+// left and right arrows to go back and forward
+function go(dir) {
+  var l = $("a[rel=" + dir + "]");
+  l[0].click();
+}
+
+$(document).on('keyup', function(evt) {
+  if(evt.which == 37) go("prev");
+  else if (evt.which == 39) go("next");
+});
